@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: test
+  description: a Fedora VM
+  links:
+    - url: https://console-openshift-console.apps.control-cluster-raffa.demo.red-chesterfield.com/k8s/ns/default/examples-dev/kubevirt.io~v1~VirtualMachine/test/console/standalone
+      title: VM Console
+      icon: web  
+spec:
+  type: virtual-machine
+  owner: group:default/guests
+  system: system:default/examples
