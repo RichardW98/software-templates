@@ -60,7 +60,7 @@ spec:
       name: make a pr with the new vm
       action: publish:github:pull-request
       input:
-        repoUrl: github.com/RichardW98/software-templates
+        repoUrl: github.com?repo=software-templates&owner=RichardW98
         branchName: ${{ parameters.resource }}
         title: ${{ parameters.resource }} VM
         description:  ${{ parameters.resource }} virtual machine  
